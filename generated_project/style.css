@@ -1,0 +1,159 @@
+/*
+ * style.css - Styling for Simple Counter App
+ * -------------------------------------------------
+ * This stylesheet provides a clean, minimal look for the
+ * counter application. It styles the header, footer, input
+ * field, display area, and control buttons using the classes
+ * and IDs defined in index.html.
+ */
+
+/* -------------------------------------------------
+ * Global Styles
+ * ------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* -------------------------------------------------
+ * Main Content Layout
+ * ------------------------------------------------- */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+section.counter {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+section.counter label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------
+ * Input Field Styling
+ * ------------------------------------------------- */
+#userInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#userInput:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* -------------------------------------------------
+ * Display Area Styling
+ * ------------------------------------------------- */
+.display {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    background-color: #e9f2fb;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+#countDisplay {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* -------------------------------------------------
+ * Control Buttons Styling
+ * ------------------------------------------------- */
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button {
+    flex: 1;
+    padding: 10px 0;
+    font-size: 1rem;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#decrementBtn {
+    background-color: #e74c3c; /* red */
+    color: #fff;
+}
+
+#incrementBtn {
+    background-color: #2ecc71; /* green */
+    color: #fff;
+}
+
+.controls button:hover {
+    opacity: 0.9;
+}
+
+/* -------------------------------------------------
+ * Responsive Adjustments
+ * ------------------------------------------------- */
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .controls button {
+        margin: 0 2px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,13 @@
+
+fastapi
+uvicorn
+websockets
+groq
+langchain
+langchain-anthropic
+langchain-core
+langchain-groq
+langchain-google-genai
+langchain-openai
+langgraph
+python-dotenv
